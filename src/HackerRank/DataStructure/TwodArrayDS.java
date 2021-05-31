@@ -55,7 +55,7 @@ The hourglass possessing the largest sum is:
 
 */
 
-package src.HackerRank.DataStructure;
+package HackerRank.DataStructure;
 
 import java.util.Scanner;
 

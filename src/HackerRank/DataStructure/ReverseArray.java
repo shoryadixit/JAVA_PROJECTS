@@ -1,26 +1,23 @@
 package HackerRank.DataStructure;
 
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
 
 public class ReverseArray {
 
+    private static final Scanner scanner = new Scanner(System.in);
+
     // Complete the reverseArray function below.
     static int[] reverseArray(int[] a) {
-        for (int i = 0, j = a.length -1; i < a.length; i++) {
+        for (int i = 0, j = a.length - 1; i < a.length; i++) {
             int temp = a[i];
             a[i] = a[j];
             a[j] = temp;
         }
         return a;
     }
-
-    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));

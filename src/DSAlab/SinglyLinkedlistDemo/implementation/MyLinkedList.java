@@ -251,4 +251,14 @@ public class MyLinkedList implements mySinglyLinkedList {
         reversedLinkedList(node.getNext());
         System.out.print(node.getData() + ",");
     }
+    Node reverseList(Node head){
+        if (head == null || head.getNext() == null)
+            return head;
+
+        Node rest = reverseList(head.getNext());
+        head = head.getNext().getNext();
+        head = head.getNext();
+        head = null;
+        return rest;
+    }
 }

@@ -66,7 +66,7 @@
 */
 
 
-package src.HackerRank.DataStructure;
+package HackerRank.DataStructure;
 
 public class ArrayManipulation {
 }
