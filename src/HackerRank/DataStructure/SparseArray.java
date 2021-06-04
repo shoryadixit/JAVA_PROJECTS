@@ -1,4 +1,4 @@
-package DSAlab.Sorting;
+package HackerRank.DataStructure;
 
 import java.io.BufferedReader;
 import java.io.IOException;
